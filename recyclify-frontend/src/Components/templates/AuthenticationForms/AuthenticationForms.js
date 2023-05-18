@@ -31,7 +31,7 @@ function AuthenticationForms(props) {
     async function postDetailsToAPI() {
         if (isSignUp) {
             try {
-                const response = await axios.post("https://recyclify-backend.onrender.com/api/auth/signup", JSON.stringify(signUpDetails), {
+                const response = await axios.post("https://recyclify-backend-9i80.onrender.com/api/auth/signup", JSON.stringify(signUpDetails), {
                     headers: {
                         "Content-Type": "application/JSON",
                     }
@@ -45,7 +45,7 @@ function AuthenticationForms(props) {
             }
         } else {
             try {
-                const response = await axios.post("https://recyclify-backend.onrender.com/api/auth/login", JSON.stringify(loginDetails), {
+                const response = await axios.post("https://recyclify-backend-9i80.onrender.com/api/auth/login", JSON.stringify(loginDetails), {
                     headers: {
                         "Content-Type": "application/JSON",
                     }

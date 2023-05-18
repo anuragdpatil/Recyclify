@@ -16,7 +16,7 @@ function Orders(props) {
   async function buyOrder(id) {
     buyingToastID = toast.loading("Just a moment, placing order...");
     try {
-      await axios.patch("https://recyclify-backend.onrender.com/api/order/ordercomplete", {
+      await axios.patch("https://recyclify-backend-9i80.onrender.com/api/order/ordercomplete", {
         "id": id,
         "collectorId": userObject._id
       }, {
@@ -38,7 +38,7 @@ function Orders(props) {
     async function getOrdersFromAPI() {
       try {
         const userOrders =
-          await axios.post("https://recyclify-backend.onrender.com/api/order/orderBycity", {
+          await axios.post("https://recyclify-backend-9i80.onrender.com/api/order/orderBycity", {
             "id": userObject._id
           }, {
             headers: {

@@ -31,7 +31,7 @@ function PostSection() {
       const tempOrderData = { ...order }
       delete tempOrderData.product_image
       formData.append("body", JSON.stringify(tempOrderData))
-      await axios.post("https://recyclify-backend.onrender.com/api/order/placeOrder", formData, {
+      await axios.post("https://recyclify-backend-9i80.onrender.com/api/order/placeOrder", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         }
